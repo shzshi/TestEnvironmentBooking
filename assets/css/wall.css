@@ -1,0 +1,300 @@
+/* 
+*/
+
+*
+{
+margin:0px;
+padding:0px;
+}
+a
+{
+color:#006699;
+text-decoration:none;
+}
+#wall_container
+{
+float:left;
+text-align:left;
+background-color:#FFFFFF;
+padding:10px;
+width:700px;
+}
+#update
+{
+width:650px;font-size:12px;
+}
+textarea
+{
+border:solid 1px #333;
+}
+/* search body */
+
+.stsearch
+{
+margin-bottom:10px;
+border-bottom:dashed 1px #dedede;
+overflow:auto;
+}
+
+.stsearchbody
+{
+margin-left:200px;
+min-height:50px;
+word-wrap:break-word;
+overflow:hidden;
+padding:5px;
+display:block;
+font-size:12px;
+width:400px;
+height:150px
+}
+.stsearch b
+{
+color:#006699;
+}
+
+/* status body */
+
+.stbody
+{
+margin-bottom:10px;
+border-bottom:dashed 1px #dedede;
+overflow:auto;
+}
+.stimg
+{
+float:left;
+height:50px;
+width:50px;
+border:solid 1px #dedede;
+padding:3px;
+}
+.sttext
+{
+margin-left:70px;
+min-height:50px;
+word-wrap:break-word;
+overflow:hidden;
+padding:5px;
+display:block;
+font-size:12px;
+width:550px;
+}
+.sttext b
+{
+color:#006699;
+}
+
+.sttime
+{
+font-size:12px;
+color:#999;
+font-family: "Trebuchet MS", tahoma, arial, serif;
+margin-top:5px;
+}
+.stdelete 
+{
+font-weight:bold;
+float:right;
+cursor:pointer;
+}
+#stexpandbox
+{
+margin-top:10px;
+}
+#stexpandbox img
+{
+border:solid 1px #dedede;
+padding:3px;
+}
+/* Comment */
+.stcommentbody
+{
+border-bottom:solid 1px #fff;
+background-color:#f2f2f2;
+padding:5px;
+width:600px;
+overflow:auto;
+}
+.stcommentimg
+{
+float:left;
+height:35px;
+width:35px;
+border:solid 1px #dedede;
+padding:2px;
+}
+.stcommenttext
+{
+margin-left:45px;
+min-height:40px;
+word-wrap:break-word;
+overflow:hidden;
+padding:3px;
+display:block;
+font-size:12px;
+width:490px;
+
+}
+.stcommenttext b
+{
+color:#006699;
+}
+
+.stcommenttime
+{
+font-size:12px;
+color:#999;
+font-family: "Trebuchet MS", tahoma, arial, serif;
+margin-top:5px;
+}
+.stcommentdelete 
+{
+font-weight:bold;
+float:right;
+cursor:pointer;
+}
+.commentupdate
+{
+background-color:#f2f2f2;
+width:600px;
+padding:5px;
+}
+.comment
+{
+width:450px;
+height:30px;
+font-size:12px;
+}
+/* faceb image*/
+.small_face
+{
+width:35px;height:35px
+}
+.big_face
+{
+width:50px;height:50px
+}
+
+.display_face
+{
+width:150px;height:150px
+}
+#contentbox
+{
+width:450px; height:30px;
+border:solid 2px #006699;
+font-family: "Trebuchet MS", tahoma, arial, serif;
+font-size:14px;
+
+}
+#flashmessage
+{
+height:15px;
+margin-top:10px;
+font-size:12px;
+color:#333;
+
+}
+
+#comment_button
+{
+background-color:#006699;
+color:#ffffff;
+font-size:13px;
+font-weight:bold;
+padding:4px;
+}
+
+#button_block
+{
+display:none;
+}
+
+.edit_profilepicture 
+{
+background:#FFFFFF none repeat scroll 0 0;
+height:20px;
+padding:5px 27px 0 6px;
+position:absolute;
+right:0;
+top:0px;
+}
+
+.edit_profilepicture_icon 
+{
+background:transparent url(../images/penciledit.gif) no-repeat scroll right top;
+height:18px;
+position:relative;
+position:absolute !important;
+width:18px;
+right:4px;
+top:4px;
+margin-top:0px;
+text-decoration:none;
+}
+.whitepencil
+{ 
+background-position:right bottom;
+}
+.hidden{    display:none; }
+
+#upload{
+	-moz-border-radius:2px 2px 2px 2px;
+background:none repeat scroll 0 0 #1E3F7F;
+color:#FFFFFF;
+cursor:pointer !important;
+font-family: "Trebuchet MS", tahoma, arial, serif;
+font-size:1.3em;
+font-weight:bold;
+margin:10px 0;
+padding:5px;
+text-align:center;
+width:98px;
+}
+#upload1{
+	-moz-border-radius:5px 5px 5px 5px;
+background:none repeat scroll 0 0 #000000;
+color:#FFFFFF;
+cursor:pointer !important;
+font-family: "Trebuchet MS", tahoma, arial, serif;
+font-size:1.3em;
+font-weight:bold;
+margin:10px 0;
+padding:5px;
+text-align:center;
+width:98px;
+}
+.darkbg{
+	background:#ddd !important;
+}
+#status{
+	font-family:Arial; padding:5px;
+}
+
+
+.error{ background:#f0c6c3; border:1px solid #cc6622; }
+.baltr{background-image:url(../images/head_bg.png); color:#FFFFFF}
+.baltd1{ background-color:#e9e5e5}
+.baltd2{ background-color:#f4f1f1}
+
+#files span{float:left;}
+
+/* jQuery lightBox plugin - Gallery style */
+#gallery {
+	background-color: #fff;
+	padding: 10px;
+	width: 520px;
+}
+#gallery ul { list-style: none; }
+#gallery ul li { display: inline; }
+#gallery ul img {
+	border: 5px solid #fff;
+	border-width: 5px 5px 20px;
+}
+#gallery ul a:hover img {
+	border: 5px solid #fff;
+	border-width: 5px 5px 20px;
+	color: #fff;
+}
+#gallery ul a:hover { color: #fff; }

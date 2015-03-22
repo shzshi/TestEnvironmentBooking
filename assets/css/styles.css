@@ -1,0 +1,130 @@
+.forms {
+background-color: #1E3F7F;
+font: normal 12px arial,verdana;
+padding: 3px;
+color:#FFFFFF;
+
+border: 1px solid #CAE4FF;
+}
+.myaccount {
+background-color: #E4F8FA;
+font-family: "Trebuchet MS", tahoma, arial, serif;
+font-size: normal 12px;
+padding: 2px 5px;
+border: 1px solid #CAE4FF;
+
+}
+
+a {
+color: #03c;
+}
+
+.main {
+font-family: "Trebuchet MS", tahoma, arial, serif;
+font-size: normal 12px;
+padding: 2px;
+margin: 2px;
+
+ }
+ 
+ .titlehdr {
+ font-family: "Trebuchet MS", tahoma, arial, serif;
+font-size: normal 22px;
+ color: #1E3F7F;
+ border-bottom: 1px solid #1E3F7F;
+ 
+ 
+ }
+ 
+.msg {
+padding: 5px;
+width: 600px;
+margin: 2px;
+color: #c00;
+border: 1px solid #c00;
+background-color: #FEF1ED;
+font-family: "Trebuchet MS", tahoma, arial, serif;
+font-size: normal 13px;
+} 
+ 
+.error {
+font-family: "Trebuchet MS", tahoma, arial, serif;
+font-size: normal 11px;
+color: #c00;
+border: 1px solid #c00;
+padding: 2px;
+/* margin: 5px; */
+float: left;
+background-color: #FEF1ED;
+}
+ 
+ .example {
+font: normal 10px arial;
+color: #FFFFFF;
+}
+.approved {
+font: normal 10px arial;
+color: green;
+}
+
+.loginform {
+background-color: #1E3F7F;
+font-family: "Trebuchet MS", tahoma, arial, serif;
+font-size: normal 12px;
+padding: 3px;
+border: 1px solid #CAE4FF;
+font: 16px normal arial;
+color: #FFFFFF;
+}
+
+.loginform #txtbox {
+font: bold 16px arial;
+color: #000000;
+}
+
+ol {
+	list-style:none;
+}
+ol li {
+	display:block;
+	clear:both;
+}
+ol li label {
+	display:block;
+	margin:0;
+	padding:16px 0 0 0;
+}
+ol li input.text {
+	width:480px;
+	border:1px solid #c0c0c0;
+	margin:0;
+	padding:5px 2px;
+	height:16px;
+	background-color:#fff;
+}
+ol li textarea {
+	width:480px;
+	border:1px solid #c0c0c0;
+	margin:0;
+	padding:2px;
+	background-color:#fff;
+}
+ol li .send {
+	margin:16px 0 0 0;
+}
+
+.mainbar .article {
+	margin:0 0 32px;
+	padding:0 0 0 20px;
+}
+
+.clr {
+	clear:both;
+	padding:0;
+	margin:0;
+	width:100%;
+	font-size:0;
+	line-height:0;
+}
+
+.tab-pane a{color:#000000 !important;}
