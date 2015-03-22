@@ -1,0 +1,42 @@
+Table : register
+username
+password
+firstname
+lastname
+usertype
+organization
+designation
+securityquestion
+securityanswers
+phone
+createdon
+
+Table : courses 
+
+coursename
+createdby 
+parent
+filetype
+courseduration
+createdon
+
+Table : Group
+
+Groupname
+groupid
+createdby
+createdon
+
+Table : calendar 
+courseid
+groupid
+instructorid
+starttime
+endtime
+createdon
+
+Table : courseattended
+userid
+courseid
+attendedon
+status
