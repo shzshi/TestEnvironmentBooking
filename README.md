@@ -29,5 +29,6 @@ $db['default']['dbdriver'] = 'mysql';
 
 Edit .htaccess
 
-RewriteBase /environmentbooking/
+RewriteBase /environmentbooking/ 
+
 php_value error_log  /var/www/html/environmentbooking/PHP_errors.log
