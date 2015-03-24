@@ -6,7 +6,12 @@ This tool allows you to create environment, add multiple users, Reserve environm
 There is calendar view to see the current reserve. Currently I am not checking the environment booking overlap. 
 
 Demo : 
-http://www.indiadevops.com/environmentbooking/ 
+http://www.indiadevops.com/environmentbooking/
+
+admin credentials 
+
+user : admin@localhost.com
+pass : admin@123 
 
 You are welcome to reach me with suggestion and idea to improve the tool. 
 
