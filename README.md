@@ -43,8 +43,15 @@ $db['default']['database'] = 'mysql-database';
 $db['default']['dbdriver'] = 'mysql';
 
 ========================================================================
+
 Edit .htaccess
+
 ========================================================================
 RewriteBase /environmentbooking/ 
 
 php_value error_log  /var/www/html/environmentbooking/PHP_errors.log
+
+=========================================================================
+add database & table in mysql 
+=========================================================================
+add testenvironmentbooking.sql to mysql database. 
