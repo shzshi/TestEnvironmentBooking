@@ -15,8 +15,8 @@ pass : admin@123
 
 You are welcome to reach me with suggestion and idea to improve the tool. 
 
-PHP Version : 5.3.3
-Mysql : 5.1.73
+PHP Version : 5.3.3 
+Mysql : 5.1.73 
 Browser : Chrome and IE-9 
 
 git clone https://github.com/shzshi/TestEnvironmentBooking.git
