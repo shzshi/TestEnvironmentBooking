@@ -20,12 +20,14 @@ Edit config.php in directory application/config/
 $config['base_url'] = http://www.myenvironmentbooking.com
 
 Edit database.php in directory application/config/
+
 $db['default']['hostname'] = 'mysql-hostname';
 $db['default']['username'] = 'mysql-username';
 $db['default']['password'] = 'mysql-password';
 $db['default']['database'] = 'mysql-database';
 $db['default']['dbdriver'] = 'mysql';
 
-edit .htaccess
+Edit .htaccess
+
 RewriteBase /environmentbooking/
 php_value error_log  /var/www/html/environmentbooking/PHP_errors.log
