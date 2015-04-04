@@ -35,7 +35,7 @@ else
 <header>
 	 <div class="row">
 		<div class="span4 logo">
-			<a href="<?php echo base_url();?>"><H4>Environment Booking Tool</H4></a>
+			<a class="ahref-tag" href="<?php echo base_url();?>"><H4>Environment Booking Tool</H4></a>
 		</div>
 		<div class="span8">
 			<div class="row-fluid">
