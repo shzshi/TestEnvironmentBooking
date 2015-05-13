@@ -59,6 +59,7 @@ $db['default']['dbdriver'] = 'mysql';
 ========================================================================
 Edit .htaccess
 ========================================================================
+
 # If your page resides at
 #  http://www.example.com/mypage/test1
 # then use
