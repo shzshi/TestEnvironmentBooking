@@ -5,7 +5,8 @@ This in an opensource tool written in PHP with code-ignitor(MVC). you are free t
 This tool allows you to create environment, add multiple users, Reserve environment and admin user can approve,edit,delete the requests. 
 There is calendar view to see the current reserve. Currently I am not checking the environment booking overlap. 
 
-Demo : 
+Demo to play around with:
+ 
 http://www.indiadevops.com/environmentbooking/
 
 admin credentials 
@@ -16,6 +17,15 @@ pass : admin@123
 
 You are welcome to reach me with suggestion and idea to improve the tool. 
 
+========================================================================
+In case you find a bug/suggested improvement for Spring Petclinic
+========================================================================
+issue tracker is available here: https://github.com/shzshi/TestEnvironmentBooking/issues
+
+
+--------------------------------------------------------------------------------
+Requirement : 
+--------------------------------------------------------------------------------
 PHP Version : 5.3.3
  
 Mysql : 5.1.73 
@@ -37,19 +47,29 @@ $config['base_url'] = http://www.myenvironmentbooking.com
 Edit database.php in directory application/config/
 ========================================================================
 $db['default']['hostname'] = 'mysql-hostname';
+
 $db['default']['username'] = 'mysql-username';
+
 $db['default']['password'] = 'mysql-password';
+
 $db['default']['database'] = 'mysql-database';
+
 $db['default']['dbdriver'] = 'mysql';
 
 ========================================================================
 Edit .htaccess
 ========================================================================
-RewriteBase /environmentbooking/ 
+# If your page resides at
+#  http://www.example.com/mypage/test1
+# then use
+# RewriteBase /mypage/test1/
+  
+RewriteBase /
 
+#set the path for error log
 php_value error_log  /var/www/html/environmentbooking/PHP_errors.log
 
 =========================================================================
 Add database & table in mysql 
 =========================================================================
-add testenvironmentbooking.sql to mysql database. 
+add testenvironmentbooking.sql to mysql database.
