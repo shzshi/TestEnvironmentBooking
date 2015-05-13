@@ -18,7 +18,7 @@ pass : admin@123
 You are welcome to reach me with suggestion and idea to improve the tool. 
 
 ========================================================================
-In case you find a bug/suggested improvement for Spring Petclinic
+In case you find a bug/suggested improvement for Environment Booking Tool
 ========================================================================
 issue tracker is available here: https://github.com/shzshi/TestEnvironmentBooking/issues
 
