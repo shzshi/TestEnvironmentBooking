@@ -16,7 +16,7 @@ class User extends CI_Controller {
 	   $this->load->library('pagination');
 	   $this->load->library('table'); 
 		
-	   $config['base_url'] = '/mobizar/user/index/';
+	   $config['base_url'] = base_url().'/user/index/';
 	   $config['total_rows'] = $this->db->get('users')->num_rows();
 	   $config['per_page'] = 10;
 	   $config['num_links'] = 10;
