@@ -18,6 +18,8 @@ class Users_model extends CI_Model{
 		$this->db->limit($limit,$offset);
 		$query = $this->db->get();
 		
+                #print_r($query);
+			
 		return $query->result_array();
 	}
 	

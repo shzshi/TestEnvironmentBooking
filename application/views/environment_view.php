@@ -19,6 +19,30 @@ $(function() {
 						 });				
 				return false;
 		});
+
+                $('#addEnv').click(function (e) {
+                   var isValid = true;
+                   $('#envname').each(function () {
+                 if ($.trim($(this).val()) == '') {
+                    isValid = false;
+                    $(this).css({
+                        "border": "1px solid red",
+                        "background": "#FFCECE"
+                    });
+                }
+                else {
+                    $(this).css({
+                        "border": "",
+                        "background": ""
+                    });
+                }
+            });
+
+            if (isValid == false)
+                e.preventDefault();
+
+        });
+
 });
 </script>				
 <div class="container page-body">
@@ -103,7 +127,7 @@ $(function() {
 								  </select><br/><br/>
 									<div class="modal-footer">
 								<a href="#" class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Close</a>
-								<button type="submit" name="addUser" class="btn btn-success" id="addUser">Add Environment</button>
+								<button type="submit" name="addUser" class="btn btn-success" id="addEnv">Add Environment</button>
 							  </div>
 							  </form>
 							  </div>

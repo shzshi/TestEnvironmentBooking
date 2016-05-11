@@ -18,6 +18,7 @@ class User extends CI_Controller {
 		
 	   $config['base_url'] = base_url().'/user/index/';
 	   $config['total_rows'] = $this->db->get('users')->num_rows();
+
 	   $config['per_page'] = 10;
 	   $config['num_links'] = 10;
 	   $config['uri_segment'] = 3;
@@ -25,6 +26,8 @@ class User extends CI_Controller {
 	   $this->pagination->initialize($config);	   
 	   
 	   //getting record for course from course by logged in user.
+	   #print_r($this->session->userdata);
+
 	   $this->data=$this->users_model->get_all($this->session->userdata('userid'),$this->session->userdata('usertype'),$config['per_page'],$this->uri->segment(3));
 	   //$this->data['msg'] = $msg;
 	   

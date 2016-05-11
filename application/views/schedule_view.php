@@ -1,5 +1,4 @@
 <?php include('header_view.php');?>
-
 <script>
 
 	//actually cursor position
@@ -318,7 +317,7 @@
 
 	//jQuery('.fc-header-left').append('<div id="calendarTrash" class="calendar-trash"><img src="'+ <?php echo asset_url(); ?>+'images/cal-trash.png"></img></div>');
 
-
+//i
 
 	});
 
@@ -326,6 +325,31 @@
     $( "#datepicker" ).datepicker();
 	$( "#datepicker1" ).datepicker();
 	});
+        
+        //form validation 
+
+ /*       $('#addUser').click(function (e) {
+            var isValid = true;
+            $('#reservename,#envtype,#reservetype').each(function () {
+                if ($.trim($(this).val()) == '') {
+                    isValid = false;
+                    $(this).css({
+                        "border": "1px solid red",
+                        "background": "#FFCECE"
+                    });
+                }
+                else {
+                    $(this).css({
+                        "border": "",
+                        "background": ""
+                    });
+                }
+            });
+            if (isValid == false)
+                e.preventDefault();
+
+        }); */
+   
 </script>
 
 <script>
@@ -333,6 +357,31 @@ jQuery(document).ready(function(){
   jQuery(".fc-event .fc-event-hori .fc-event-draggable .fc-event-start .fc-event-end .ui-draggable").dblclick(function(){
   jQuery(".fc-event .fc-event-hori .fc-event-draggable .fc-event-start .fc-event-end .ui-draggable").hide().css("visibility", "hidden !important");
   });
+
+
+       $('#addUser').click(function (e) {
+            var isValid = true;
+            $('#reservename,#envtype,#reservetype,#datepicker,#datepicker1').each(function () {
+                if ($.trim($(this).val()) == '') {
+                    isValid = false;
+                    $(this).css({
+                        "border": "1px solid red",
+                        "background": "#FFCECE"
+                    });
+                }
+                else {
+                    $(this).css({
+                        "border": "",
+                        "background": ""
+                    });
+                }
+            });
+
+            if (isValid == false)
+                e.preventDefault();
+
+        });
+
 });
 </script>
 
@@ -384,20 +433,20 @@ jQuery(document).ready(function(){
 								//if(! is_null($this->data['msg'])) echo $this->data['msg'];
 						  ?>
 						  <div class="modal-body">
-								  <input type="text" name="reservename" class="input-medium" placeholder="Reservation Name" />
+								  <input type="text" name="reservename" id="reservename" class="input-medium" placeholder="Reservation Name" />
 								  <?php
 									 $dropDownGroups=$this->schedule_model->getEnvforDropdown();
 								  ?>
-								  <select name="envtype">
-									<option value="none" selected>--Environment Type--</option>
+								  <select name="envtype" id="envtype">
+									<option value=" " selected>--Environment Type--</option>
 									<?php 
 										foreach($dropDownGroups as $row){
 											echo "<option value='".$row->envid."'>".$row->envname."</option>";
 										}
 									?>
 								  </select><br/><br/>
-								  <select name="reservetype">
-								    <option value="" selected>--Reservation Type--</option>
+								  <select name="reservetype" id="reservetype">
+								    <option value=" " selected>--Reservation Type--</option>
 									<option value="generic">Generic</option>
 									<option value="release">Release</option>
 									<option value="maintainance">Maintainance</option>
