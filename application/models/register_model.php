@@ -32,7 +32,8 @@ class Register_model extends CI_Model{
 		'phone' => '$phone', 
 		'createdon' => 'NOW()'
 		);*/ 
-	    
+	   if(!empty($email) && !empty($password) && !empty($firstName) && !empty($lastName))
+	   {   
 		$this->db->set('username', $email);
 		$this->db->set('password', 'PASSWORD("'.$password.'")',FALSE);
 		$this->db->set('firstname', $firstName);
@@ -45,6 +46,7 @@ class Register_model extends CI_Model{
 		$this->db->set('phone', $phone);
 		$this->db->set('createdon','NOW()',FALSE);
 		
-		return $this->db->insert('users'); 
+		return $this->db->insert('users');
+           }
     }	
 }
