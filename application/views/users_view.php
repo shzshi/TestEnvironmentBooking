@@ -8,7 +8,7 @@ $(function() {
 					var dataString = 'userID=' + ID;
 					$.ajax({
 						type: "POST",
-						url: "user/userdiv",
+						url: "<?php echo base_url(); ?>user/userdiv",
 						data: dataString,
 						cache: false,
 						success: function(response){
@@ -64,9 +64,9 @@ $(function() {
 							$actiontag = "
 							<div class=\"btn-toolbar\">
 							  <div class=\"btn-group\">
-								<a class=\"btn\" href=\"users/edit/".$key['userid']."/\"><i title=\"Edit\" class=\"icon-edit\" id='".$key['userid']."'></i></a>";
+								<a class=\"btn\" href=\"".base_url()."users/edit/".$key['userid']."/\"><i title=\"Edit\" class=\"icon-edit\" id='".$key['userid']."'></i></a>";
 								if($this->session->userdata('usertype'))
-								$actiontag.="<a class=\"btn\" href=\"user/delete/".$key['userid']."\" onClick=\"return confirm('Are you sure you want to delete?')\"><i title=\"Delete\" class=\"icon-trash\"></i></a>
+								$actiontag.="<a class=\"btn\" href=\"".base_url()."user/delete/".$key['userid']."\" onClick=\"return confirm('Are you sure you want to delete?')\"><i title=\"Delete\" class=\"icon-trash\"></i></a>
 							  </div>
 							</div>";
 

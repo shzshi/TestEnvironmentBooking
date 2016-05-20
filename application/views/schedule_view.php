@@ -423,7 +423,7 @@ jQuery(document).ready(function(){
 
 							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 
-							<h3>Clear Schedule</h3>
+							<h3>Create Reservation</h3>
 
 						  </div>
 

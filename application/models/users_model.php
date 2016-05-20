@@ -45,7 +45,7 @@ class Users_model extends CI_Model{
 		$this->db->set('username', $userName);
 		$this->db->set('firstname', $firstName);
 		$this->db->set('lastname', $lastName);
-		$this->db->set('usertype', '');
+		$this->db->set('usertype', $this->session->userdata('usertype'));
 		$this->db->set('organization', $organisation);
 		$this->db->set('designation', $designation);
 		$this->db->set('phone', $phone);		
