@@ -42,6 +42,7 @@ CREATE TABLE IF NOT EXISTS `environment` (
   `envid` int(10) NOT NULL AUTO_INCREMENT COMMENT 'Environment id',
   `envname` varchar(100) NOT NULL COMMENT 'Environment Name',
   `envtype` varchar(100) NOT NULL COMMENT 'Environment Type',
+  `component` varchar(100) NOT NULL COMMENT 'Component',
   `createdon` date NOT NULL,
   `createdby` int(10) NOT NULL,
   PRIMARY KEY (`envid`)
