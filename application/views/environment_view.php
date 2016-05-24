@@ -127,23 +127,23 @@ $(function() {
 											  </select><br/>
 											  <select name="componentGroup[]" multiple="multiple" style="width: 400px !important; min-width: 350px; max-width: 380px;">
 												<optgroup label="Application">
-													<option value="C++ / C#">Apache</option>
-													<option value="Java">DOTNET</option>
-													<option value="Objective-C">JBoss</option>
-													<option value="C++ / C#">Mobile</option>
-													<option value="Java">Sharepoint</option>
-													<option value="Objective-C">Weblogic</option>
+													<option value="apache">Apache</option>
+													<option value="dotnet">DOTNET</option>
+													<option value="jboss">JBoss</option>
+													<option value="mobile">Mobile</option>
+													<option value="sharepoint">Sharepoint</option>
+													<option value="weblogic">Weblogic</option>
 												</optgroup>
 												<optgroup label="Databases">
-													<option value="JavaScript">Oracle</option>
-													<option value="JavaScript">SQL Server</option>
-													<option value="JavaScript">MySQL</option>
-													<option value="JavaScript">MongoDB</option>
-													<option value="JavaScript">Postgress</option>
+													<option value="oracle">Oracle</option>
+													<option value="sqlserver">SQL Server</option>
+													<option value="mysql">MySQL</option>
+													<option value="mongodb">MongoDB</option>
+													<option value="postgress">Postgress</option>
 												</optgroup>
 												<optgroup label="MiddleWare">
-													<option value="Perl">SOA</option>
-													<option value="PHP">Camel</option>
+													<option value="soa">SOA</option>
+													<option value="camel">Camel</option>
 												</optgroup>										
 											</select> </br>
 											Press Ctrl to select Multiple Options</BR>
