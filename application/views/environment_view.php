@@ -125,38 +125,29 @@ $(function() {
 												<option value="non-production">Non-Production</option>
 												<option value="production">Production</option>
 											  </select><br/>
-											  <select name="basicOptgroup[]" multiple="multiple">
-												<optgroup label="Programming Languages">
-													<option value="C++ / C#">C++ / C#</option>
-													<option value="Java">Java</option>
-													<option value="Objective-C">Objective-C</option>
+											  Press Ctrl to select Multiple Options
+											  <select name="componentGroup[]" multiple="multiple">
+												<optgroup label="Application">
+													<option value="C++ / C#">Apache</option>
+													<option value="Java">DOTNET</option>
+													<option value="Objective-C">JBoss</option>
+													<option value="C++ / C#">Mobile</option>
+													<option value="Java">Sharepoint</option>
+													<option value="Objective-C">Weblogic</option>
 												</optgroup>
-												<optgroup label="Client-side scripting Languages">
-													<option value="JavaScript">JavaScript</option>
+												<optgroup label="Databases">
+													<option value="JavaScript">Oracle</option>
+													<option value="JavaScript">SQL Server</option>
+													<option value="JavaScript">MySQL</option>
+													<option value="JavaScript">MongoDB</option>
+													<option value="JavaScript">Postgress</option>
 												</optgroup>
-												<optgroup label="Server-side scripting Languages">
-													<option value="Perl">Perl</option>
-													<option value="PHP">PHP</option>
-													<option value="Ruby on Rails">Ruby on Rails</option>
-												</optgroup>
-												<optgroup label="Mobile Platforms">
-													<option value="Android">Android</option>
-													<option value="iOS (iPhone, iPad and iPod Touch)">iOS (iPhone, iPad and iPod Touch)</option>
-												</optgroup>
-												<optgroup label="Document Markup Languages">
-													<option value="HTML">HTML</option>
-													<option value="SGML">SGML</option>
-												</optgroup>
-										<!--script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script-->
-										<script src="jquery.multiselect.js"></script>
-										<?php echo "<script src='".asset_url()."jquery.multiselect.js'></script>"; ?>
-										<script>
-										$('select[multiple]').multiselect({
-											columns: 4,
-											placeholder: 'Select options'
-										});
-										</script>
-										</select><br/><br/>
+												<optgroup label="MiddleWare">
+													<option value="Perl">SOA</option>
+													<option value="PHP">Camel</option>
+												</optgroup>										
+											</select>
+										<br/><br/>
 									<div class="modal-footer">
 								<a href="#" class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Close</a>
 								<button type="submit" name="addUser" class="btn btn-success" id="addEnv">Add Environment</button>
