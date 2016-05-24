@@ -49,13 +49,15 @@ class Environment_model extends CI_Model{
 		// grab environment input
         $envname = $this->security->xss_clean($this->input->post('envname'));        
         $envtype = $this->security->xss_clean($this->input->post('envtype'));	    	
-	    
+		$componentGroup = implode('~',$this->security->xss_clean($this->input->post('componentGroup')));
+		
 		$this->db->set('envname', $envname);
 		$this->db->set('envtype', $envtype);
+		$this->db->set('component', $componentGroup);
 		$this->db->set('createdon','NOW()',FALSE);
 		$this->db->set('createdby',$this->session->userdata('userid'));
 		
-		return $this->db->insert('environment'); 
+		//return $this->db->insert('environment'); 
 	}
 	
 	public function delEnvironment($envId){	
