@@ -113,18 +113,50 @@ $(function() {
 								<h3>Add A New Environment</h3>
 							  </div>
 							  <div class="modal-body" id="modal-body">
-							  <?php 
-								$attributes = array ('name'=> 'addEnviromentForm','id'=>'addEnviromentForm');
-								echo form_open_multipart('environment/add',$attributes);
-								//if(! is_null($this->data['msg'])) echo $this->data['msg'];
-								?>
-								  <input type="text" name="envname" class="input-medium" placeholder="Environment Name" />
-								  <select name="envtype">
-									<option value="none">None</option>
-									<option value="development" selected>Development</option>
-									<option value="non-production">Non-Production</option>
-									<option value="production">Production</option>
-								  </select><br/><br/>
+										  <?php 
+											$attributes = array ('name'=> 'addEnviromentForm','id'=>'addEnviromentForm');
+											echo form_open_multipart('environment/add',$attributes);
+											//if(! is_null($this->data['msg'])) echo $this->data['msg'];
+											?>
+											  <input type="text" name="envname" class="input-medium" placeholder="Environment Name" />
+											  <select name="envtype">
+												<option value="none">None</option>
+												<option value="development" selected>Development</option>
+												<option value="non-production">Non-Production</option>
+												<option value="production">Production</option>
+											  </select><br/>
+											  <select name="basicOptgroup[]" multiple="multiple">
+												<optgroup label="Programming Languages">
+													<option value="C++ / C#">C++ / C#</option>
+													<option value="Java">Java</option>
+													<option value="Objective-C">Objective-C</option>
+												</optgroup>
+												<optgroup label="Client-side scripting Languages">
+													<option value="JavaScript">JavaScript</option>
+												</optgroup>
+												<optgroup label="Server-side scripting Languages">
+													<option value="Perl">Perl</option>
+													<option value="PHP">PHP</option>
+													<option value="Ruby on Rails">Ruby on Rails</option>
+												</optgroup>
+												<optgroup label="Mobile Platforms">
+													<option value="Android">Android</option>
+													<option value="iOS (iPhone, iPad and iPod Touch)">iOS (iPhone, iPad and iPod Touch)</option>
+												</optgroup>
+												<optgroup label="Document Markup Languages">
+													<option value="HTML">HTML</option>
+													<option value="SGML">SGML</option>
+												</optgroup>
+										<!--script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script-->
+										<script src="jquery.multiselect.js"></script>
+										<?php echo "<script src='".asset_url()."jquery.multiselect.js'></script>"; ?>
+										<script>
+										$('select[multiple]').multiselect({
+											columns: 4,
+											placeholder: 'Select options'
+										});
+										</script>
+										</select><br/><br/>
 									<div class="modal-footer">
 								<a href="#" class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Close</a>
 								<button type="submit" name="addUser" class="btn btn-success" id="addEnv">Add Environment</button>
