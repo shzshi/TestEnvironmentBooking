@@ -57,7 +57,7 @@ class Environment_model extends CI_Model{
 		$this->db->set('createdon','NOW()',FALSE);
 		$this->db->set('createdby',$this->session->userdata('userid'));
 		
-		//return $this->db->insert('environment'); 
+		return $this->db->insert('environment'); 
 	}
 	
 	public function delEnvironment($envId){	
