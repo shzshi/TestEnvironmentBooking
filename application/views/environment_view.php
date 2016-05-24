@@ -125,7 +125,6 @@ $(function() {
 												<option value="non-production">Non-Production</option>
 												<option value="production">Production</option>
 											  </select><br/>
-											  Press Ctrl to select Multiple Options
 											  <select name="componentGroup[]" multiple="multiple">
 												<optgroup label="Application">
 													<option value="C++ / C#">Apache</option>
@@ -147,6 +146,7 @@ $(function() {
 													<option value="PHP">Camel</option>
 												</optgroup>										
 											</select>
+											Press Ctrl to select Multiple Options</BR>
 										<br/><br/>
 									<div class="modal-footer">
 								<a href="#" class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Close</a>
