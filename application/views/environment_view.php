@@ -157,32 +157,6 @@ $(function() {
 							</div>
 							<!-- Button to trigger modal -->
 							 
-							<!-- Modal -->
-							<div class="modal hide fade" id="myModal2">
-								<?php 
-									$attributes = array ('name'=> 'uploadUserForm','id'=>'uploadUserForm','class'=>'form-horizontal');
-									echo form_open_multipart('user/bulkUpload',$attributes);
-									//if(! is_null($this->data['msg'])) echo $this->data['msg'];
-								?>			
-							  <div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-								<h3>Upload the User List </h3>
-							  </div>
-							  <div class="modal-body">
-								 
-									<div class="control-group">
-										<label class="control-label" for="">Select User List</label>
-										<div class="controls">
-												<p><input type="file" name="userfile" /></p>
-										</div>
-									</div>
-							   </div>
-							  <div class="modal-footer">
-								<a href="#" class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Close</a>
-								<button type="submit" name="uploadUser" class="btn btn-success" id="uploadUser">Upload selected list</button>
-							  </div>
-							  </form>
-							</div>
 						</div>
 					</div>
    			</div>
