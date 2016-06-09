@@ -45,6 +45,10 @@ class Environment extends CI_Controller {
 		
 		$attributes = array ('name'=> 'updateEnvironmentForm','id'=>'updateEnvironmentForm');
 		$envArray = array("development","non-production","production");
+		$appArray = array("apache","dotnet","jboss","mobile","sharepoint","weblogic");
+		$dbArray = array("oracle","sqlserver","mysql","mongodb","postgress");
+		$mArray = array("soa","camel");
+		$componentArray = explode("~",$results->component);
 		
         $EnvironmentFormDiv="
 		  <div class=\"modal-body\">
@@ -61,7 +65,37 @@ class Environment extends CI_Controller {
 						$EnvironmentFormDiv.="<option value=\"".$sValue."\">".ucwords($sValue)."</option>";
 				}
 				
-				$EnvironmentFormDiv.="</select><div class=\"modal-footer\">
+				$EnvironmentFormDiv.="</select></BR>
+				Component : <select name=\"componentGroup[]\" multiple=\"multiple\" style=\"width: 400px !important; min-width: 350px; max-width: 380px;\">
+												<optgroup label=\"Application\">";
+												
+													foreach($appArray as $aValue)
+													{				
+														if($results->component == $aValue)
+															$EnvironmentFormDiv.="<option value=\"".$aValue."\" selected>".ucwords($aValue)."</option>";
+														else
+															$EnvironmentFormDiv.="<option value=\"".$aValue."\">".ucwords($aValue)."</option>";
+													}
+												$EnvironmentFormDiv.="</optgroup>
+												<optgroup label=\"Databases\">";
+													foreach($dbArray as $dbValue)
+													{				
+														if($results->component == $dbValue)
+															$EnvironmentFormDiv.="<option value=\"".$dbValue."\" selected>".ucwords($dbValue)."</option>";
+														else
+															$EnvironmentFormDiv.="<option value=\"".$dbValue."\">".ucwords($dbValue)."</option>";
+													}
+												$EnvironmentFormDiv.="</optgroup>
+												<optgroup label=\"MiddleWare\">";
+													foreach($mArray as $mValue)
+													{				
+														if($results->component == $mValue)
+															$EnvironmentFormDiv.="<option value=\"".$mValue."\" selected>".ucwords($mValue)."</option>";
+														else
+															$EnvironmentFormDiv.="<option value=\"".$mValue."\">".ucwords($mValue)."</option>";
+													}
+																					
+				$EnvironmentFormDiv.="</optgroup></select><div class=\"modal-footer\">
 					<a href=\"#\" class=\"btn btn-danger\" data-dismiss=\"modal\" aria-hidden=\"true\">Close</a>
 					<button type=\"submit\" name=\"editEnvironment\" class=\"btn btn-success\" id=\"editEnvironment\">Edit this Environment</button>
 				</div>
