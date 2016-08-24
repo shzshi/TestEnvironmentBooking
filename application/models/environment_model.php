@@ -9,7 +9,7 @@ class Environment_model extends CI_Model{
     }
 
     function get_all($user_id,$user_type,$limit,$offset) {
-		$this->db->select('envid, envname, envtype');
+		$this->db->select('envid, envname, envtype, component');
 		$this->db->from('environment');
 		
 		if($user_type!='admin')
@@ -35,9 +35,11 @@ class Environment_model extends CI_Model{
 		$envname = $this->security->xss_clean($this->input->post('envname'));
         $envtype = $this->security->xss_clean($this->input->post('envtype'));	    
 		$envid = $this->security->xss_clean($this->input->post('envid'));
+		$componentGroup = implode('~',$this->security->xss_clean($this->input->post('componentGroup')));
 	    
 		$this->db->set('envname', $envname);
 		$this->db->set('envtype', $envtype);
+		$this->db->set('component', $componentGroup);
 		$this->db->where('envid', $envid);
 		$this->db->update('environment');
 		
