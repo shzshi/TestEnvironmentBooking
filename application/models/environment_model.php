@@ -23,7 +23,7 @@ class Environment_model extends CI_Model{
 	
 	public function getEnvironment($envID){
 	
-	    $this->db->select('envid, envname, envtype');
+	    $this->db->select('envid, envname, envtype, component');
 		$this->db->where('envid', $envID);
 		$query = $this->db->get('environment');
 		return $query->row();
