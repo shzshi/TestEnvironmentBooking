@@ -71,7 +71,7 @@ class Environment extends CI_Controller {
 												
 													foreach($appArray as $aValue)
 													{				
-														if($results->component == $aValue)
+														if(in_array($aValue,$componentArray))
 															$EnvironmentFormDiv.="<option value=\"".$aValue."\" selected>".ucwords($aValue)."</option>";
 														else
 															$EnvironmentFormDiv.="<option value=\"".$aValue."\">".ucwords($aValue)."</option>";
@@ -79,8 +79,8 @@ class Environment extends CI_Controller {
 												$EnvironmentFormDiv.="</optgroup>
 												<optgroup label=\"Databases\">";
 													foreach($dbArray as $dbValue)
-													{				
-														if($results->component == $dbValue)
+													{																		
+														if(in_array($dbValue,$componentArray))
 															$EnvironmentFormDiv.="<option value=\"".$dbValue."\" selected>".ucwords($dbValue)."</option>";
 														else
 															$EnvironmentFormDiv.="<option value=\"".$dbValue."\">".ucwords($dbValue)."</option>";
@@ -89,7 +89,7 @@ class Environment extends CI_Controller {
 												<optgroup label=\"MiddleWare\">";
 													foreach($mArray as $mValue)
 													{				
-														if($results->component == $mValue)
+														if(in_array($mValue,$componentArray))
 															$EnvironmentFormDiv.="<option value=\"".$mValue."\" selected>".ucwords($mValue)."</option>";
 														else
 															$EnvironmentFormDiv.="<option value=\"".$mValue."\">".ucwords($mValue)."</option>";
