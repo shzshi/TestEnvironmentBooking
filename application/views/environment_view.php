@@ -43,7 +43,19 @@ $(function() {
 
         });
 
+		get_random_color();
 });
+
+function get_random_color() {
+    var letters = '0123456789ABCDEF'.split('');
+    var color = '#';
+    for (var i=0; i<6; i++ ) {
+        color += letters[Math.floor(Math.random() * letters.length)];
+    }
+    document.getElementById("eventColor").value = color;
+
+    //return color;
+}
 </script>				
 <div class="container page-body">
 	<div class="row">
@@ -150,6 +162,7 @@ $(function() {
 										<br/><br/>
 									<div class="modal-footer">
 								<a href="#" class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Close</a>
+								<input type="text" name="eventColor" id="eventColor" value="">
 								<button type="submit" name="addUser" class="btn btn-success" id="addEnv">Add Environment</button>
 							  </div>
 							  </form>
