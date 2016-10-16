@@ -15,7 +15,8 @@ class Schedule_model extends CI_Model{
     }
 
 	public function events() {
-		$this->db->select('c.calendarid as id, CONCAT("Reservation Name : ",c.reservename, " \nReservation Type : ", c.reservetype, " \nEnvironment : ", en.envname) as title,en.color as color, c.starttime as start, c.endtime as end',FALSE);
+		//$this->db->select('c.calendarid as id, CONCAT("Reservation Name : ",c.reservename, " \nReservation Type : ", c.reservetype, " \nEnvironment : ", en.envname) as title,en.color as color, c.starttime as start, c.endtime as end',FALSE);
+		$this->db->select('c.calendarid as id, CONCAT("Reservation Name : ",c.reservename) as title, CONCAT("Reservation Name : ",c.reservename, " \nReservation Type : ", c.reservetype, " \nEnvironment : ", en.envname) as description,en.color as color, c.starttime as start, c.endtime as end',FALSE);
 		$this->db->from('calendar c');		
 		$this->db->where('c.status','approved');
 		$this->db->join('environment en','c.envid=en.envid','SELF');
