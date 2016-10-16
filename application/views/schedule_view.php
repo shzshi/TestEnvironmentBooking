@@ -141,9 +141,13 @@
 
 			dragRevertDuration: 0,
 
-			editable: true,
+			editable: false,
 
-			droppable: true, // this allows things to be dropped onto the calendar !!!
+			droppable: false, // this allows things to be dropped onto the calendar !!!
+			
+			eventRender: function(event, element) {
+				$(element).popover({title: event.title, content: event.description, trigger: 'hover', placement: 'auto right', delay: {"hide": 300 }});             
+			},
 
 			drop: function(date, allDay) {
 
