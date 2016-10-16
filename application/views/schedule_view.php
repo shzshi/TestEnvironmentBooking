@@ -139,8 +139,6 @@
 
 			events: "schedule/events",
 
-			
-
 			dragRevertDuration: 0,
 
 			editable: true,
