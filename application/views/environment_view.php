@@ -162,7 +162,7 @@ function get_random_color() {
 										<br/><br/>
 									<div class="modal-footer">
 								<a href="#" class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Close</a>
-								<input type="text" name="eventColor" id="eventColor" value="">
+								<input type="hidden" name="eventColor" id="eventColor" value="">
 								<button type="submit" name="addUser" class="btn btn-success" id="addEnv">Add Environment</button>
 							  </div>
 							  </form>
