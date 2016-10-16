@@ -381,6 +381,7 @@ jQuery(document).ready(function(){
         });
 
 });
+</script>
 
 <div class="container page-body">
 
