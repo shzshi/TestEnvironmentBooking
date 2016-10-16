@@ -52,10 +52,12 @@ class Environment_model extends CI_Model{
         $envname = $this->security->xss_clean($this->input->post('envname'));        
         $envtype = $this->security->xss_clean($this->input->post('envtype'));	    	
 		$componentGroup = implode('~',$this->security->xss_clean($this->input->post('componentGroup')));
+		$eventColor = $this->security->xss_clean($this->input->post('eventColor'));
 		
 		$this->db->set('envname', $envname);
 		$this->db->set('envtype', $envtype);
 		$this->db->set('component', $componentGroup);
+		$this->db->set('color', $eventColor);
 		$this->db->set('createdon','NOW()',FALSE);
 		$this->db->set('createdby',$this->session->userdata('userid'));
 		
