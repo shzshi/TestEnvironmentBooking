@@ -146,7 +146,7 @@
 			droppable: false, // this allows things to be dropped onto the calendar !!!
 			
 			eventRender: function(event, element) {
-				$(element).popover({html:true,title: event.title, content: event.description, trigger: 'hover', placement: 'auto right', container:'body', delay: {"hide": 300 }});             
+				$(element).popover({html:true,title: event.title, content: event.description, trigger: 'hover', placement: 'auto right', container:'#calendar', delay: {"hide": 300 }});             
 			},
 
 			drop: function(date, allDay) {
