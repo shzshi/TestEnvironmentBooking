@@ -49,7 +49,6 @@ class Environment extends CI_Controller {
 		$dbArray = array("oracle","sqlserver","mysql","mongodb","postgress");
 		$mArray = array("soa","camel");
 		$componentArray = explode("~",$results->component);
-		print_r($componentArray);
 		
         $EnvironmentFormDiv="
 		  <div class=\"modal-body\">
