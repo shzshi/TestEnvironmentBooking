@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://192.168.33.16:8087/TestEnvironmentBooking/';
+$config['base_url']	= 'http://localhost/TestEnvironmentBooking/';
 
 /*
 |--------------------------------------------------------------------------
