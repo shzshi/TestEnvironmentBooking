@@ -146,7 +146,8 @@ function step_2(){
 	$file_contents = str_replace("http://localhost/TestEnvironmentBooking/",$ebt_host,$file_contents);
 	file_put_contents($path_to_file,$file_contents);
    
-	echo("<script>location.href = 'install.php?step=3';</script>");
+     exit(header("Location: install.php?step=3"));
+//	 echo("<script>location.href = 'install.php?step=3';</script>");
   }
   }
 ?>
