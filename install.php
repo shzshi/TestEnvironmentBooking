@@ -79,7 +79,7 @@ function step_1(){
    <td><?php echo is_writable('application\config\database.php') ? 'Ok' : 'Not Ok'; ?></td>
   </tr>
   <tr>
-   <td>database.php</td>
+   <td>config.php</td>
    <td><?php echo is_writable('application\config\database.php') ? 'Writable' : 'Unwritable'; ?></td>
    <td>Writable</td>
    <td><?php echo is_writable('application\config\config.php') ? 'Ok' : 'Not Ok'; ?></td>

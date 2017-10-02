@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://35.198.86.65/EBT/TestEnvironmentBooking';
+$config['base_url']	= 'http://localhost/TestEnvironmentBooking/';
 
 /*
 |--------------------------------------------------------------------------
