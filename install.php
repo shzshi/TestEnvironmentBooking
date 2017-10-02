@@ -3,6 +3,7 @@
 <head>
 <title>Installation Script</title>
 </head>
+<body>
 <?php
 $step = (isset($_GET['step']) && $_GET['step'] != '') ? $_GET['step'] : '';
 switch($step){
@@ -185,4 +186,15 @@ function step_2(){
   </form>
 <?php
 }
+
+function step_3(){
 ?>
+	<p>
+		<label>Installation Complete</label>
+	</p>
+
+<?php	
+}
+?>
+</body>
+</html>
