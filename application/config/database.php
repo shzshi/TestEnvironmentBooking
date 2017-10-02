@@ -14,7 +14,7 @@
 |
 |	['hostname'] The hostname of your database server.
 |	['username'] The username used to connect to the database
-|	['password'] The password used to connect to the database
+|	['mypass'] The mypass used to connect to the database
 |	['database'] The name of the database you want to connect to
 |	['dbdriver'] The database type. ie: mysql.  Currently supported:
 				 mysql, mysqli, postgre, odbc, mssql, sqlite, oci8
@@ -50,7 +50,7 @@ $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'root';
-$db['default']['password'] = 'password';
+$db['default']['password'] = 'mysql_password';
 $db['default']['database'] = 'environmentbooking';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';

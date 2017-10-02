@@ -134,7 +134,7 @@ function step_2(){
 	print_r($file_contents);
 	$file_contents = str_replace("localhost",$database_host,$file_contents);
 	$file_contents = str_replace("root",$database_username,$file_contents);
-	$file_contents = str_replace("password",$database_password,$file_contents);
+	$file_contents = str_replace("mysql_password",$database_password,$file_contents);
 	$file_contents = str_replace("environmentbooking",$database_name,$file_contents);
 	echo $file_contents;
 	echo "my Test";
