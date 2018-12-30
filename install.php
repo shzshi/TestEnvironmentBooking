@@ -105,7 +105,7 @@ function step_2(){
   if (empty($admin_name) || empty($admin_password) || empty($database_host) || empty($database_username) || empty($database_name)) {
    echo "All fields are required! Please re-enter.<br />";
   } else {
-   $connection = mysql_connect($database_host, $database_username, $database_password);
+   $connection = mysqli_connect($database_host, $database_username, $database_password);
    mysql_select_db($database_name, $connection);
   
    $file ='testenvironmentbooking.sql';

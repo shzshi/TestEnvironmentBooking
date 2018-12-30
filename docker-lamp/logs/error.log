@@ -1,0 +1,13 @@
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.21.0.3. Set the 'ServerName' directive globally to suppress this message
+[Sun Dec 23 23:19:10.631009 2018] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.10 (Debian) PHP/5.6.39 configured -- resuming normal operations
+[Sun Dec 23 23:19:10.631694 2018] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Sun Dec 23 23:19:36.557039 2018] [autoindex:error] [pid 19] [client 172.21.0.1:35758] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Sun Dec 23 23:37:34.967648 2018] [:error] [pid 21] [client 172.21.0.1:35842] script '/var/www/html/phpinfo.php' not found or unable to stat
+[Sun Dec 23 23:37:47.141242 2018] [autoindex:error] [pid 23] [client 172.21.0.1:35844] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Sun Dec 23 23:53:15.371855 2018] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.21.0.3. Set the 'ServerName' directive globally to suppress this message
+[Sun Dec 23 23:53:17.750894 2018] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.10 (Debian) PHP/5.6.39 configured -- resuming normal operations
+[Sun Dec 23 23:53:17.751597 2018] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Sun Dec 30 20:32:11.867927 2018] [:error] [pid 20] [client 172.21.0.1:35962] script '/var/www/html/phpinfo.php' not found or unable to stat
+[Sun Dec 30 20:32:18.786222 2018] [autoindex:error] [pid 20] [client 172.21.0.1:35962] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Sun Dec 30 20:32:20.992077 2018] [autoindex:error] [pid 20] [client 172.21.0.1:35962] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive

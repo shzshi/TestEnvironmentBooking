@@ -20,7 +20,7 @@
   php_flag display_errors on
   php_flag html_errors on
   php_flag  log_errors on
-  php_value error_log  /ebt/PHP_errors.log
+  #php_value error_log  /ebt/PHP_errors.log
   
 </IfModule>
 
