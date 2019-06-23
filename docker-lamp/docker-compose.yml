@@ -13,8 +13,8 @@ services:
       - '8000:80'
     # restart: always
     volumes:
-       - /Users/shashi/Documents/EBT/TestEnvironmentBooking/docker-lamp/logs/:/var/log/apache2/
-       - /Users/shashi/Documents/EBT/TestEnvironmentBooking/docker-lamp/ProjectRoot/:/var/www/html
+       - /your/host/path/TestEnvironmentBooking/docker-lamp/logs/:/var/log/apache2/
+       - /your/host/path/TestEnvironmentBooking/docker-lamp/ProjectRoot/:/var/www/html
     depends_on:
       - db
 volumes:
