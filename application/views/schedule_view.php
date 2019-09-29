@@ -317,7 +317,7 @@
 
 	
 
-	//jQuery('.fc-header-left').append('<div id="calendarTrash" class="calendar-trash"><img src="'+ <?php echo asset_url(); ?>+'images/cal-trash.png"></img></div>');
+	//jQuery('.fc-header-left').append('<div id="calendarTrash" class="calendar-trash"><img src="'+ <?php echo base_url(); ?>assets/+'images/cal-trash.png"></img></div>');
 
 //i
 
