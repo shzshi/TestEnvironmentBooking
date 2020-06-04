@@ -1,4 +1,4 @@
-version: '2'
+version: '3.5'
 
 services:
    db:
@@ -8,13 +8,13 @@ services:
      environment:
        MYSQL_ROOT_PASSWORD: root
    php:
-    build: ./php
+    build: ./
     ports:
       - '8000:80'
     # restart: always
     volumes:
-       - /Users/shashi/Documents/EBT/TestEnvironmentBooking/docker-lamp/logs/:/var/log/apache2/
-       - /Users/shashi/Documents/EBT/TestEnvironmentBooking/docker-lamp/ProjectRoot/:/var/www/html
+       - ./logs/:/var/log/apache2/
+      #  - ./ebt/:/var/www/html/
     depends_on:
       - db
 volumes:
