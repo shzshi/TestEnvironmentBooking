@@ -63,10 +63,9 @@ Once docker-compose sucessfully creates the containers , you should be able to a
 
 - url : http://localhost/ebt/
 
-- admin credentials 
+##### admin credentials 
 
 user : admin@localhost.com
-
 pass : admin@123 
 
 #### Manual Setup
