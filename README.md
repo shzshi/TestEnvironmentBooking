@@ -33,8 +33,8 @@ issue tracker is available here: https://github.com/shzshi/TestEnvironmentBookin
 
 ### Requirement : 
 ```
-PHP Version : 5.3.3
-Mysql : 5.1.73 
+PHP Version : 5.6 and above
+Mysql : 5.1.73
 Browser : Chrome and IE-9 
 ```
 
