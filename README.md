@@ -1,4 +1,4 @@
-#Test Environment Booking Tool 
+# Test Environment Booking Tool 
 
 This in an opensource tool written in PHP with code-ignitor(MVC). you are free to clone, do a pull request or download and use it commercially. 
 
@@ -42,7 +42,7 @@ Browser : Chrome and IE-9
 
 #### Quick and Easy 
 
-you can quickly stand up environment booking on your server with docker , please please follow the steps for the same 
+you can quickly stand up environment booking with docker , please please follow the steps for the same 
 
 - Git Clone the repo 
 
