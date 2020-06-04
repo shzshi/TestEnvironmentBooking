@@ -61,11 +61,14 @@ docker-compose up --build -d
 
 Once docker-compose sucessfully creates the containers , you should be able to access the tools 
 
-- url : http://localhost/ebt/
+##### url 
 
-##### admin credentials 
+http://localhost/ebt/
 
+
+##### admin credentials
 user : admin@localhost.com
+
 pass : admin@123 
 
 #### Manual Setup
