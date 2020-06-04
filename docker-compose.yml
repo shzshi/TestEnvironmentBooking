@@ -10,7 +10,7 @@ services:
    php:
     build: ./
     ports:
-      - '8000:80'
+      - '80:80'
     # restart: always
     volumes:
        - ./logs/:/var/log/apache2/

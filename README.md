@@ -1,9 +1,16 @@
-##Test Environment Booking Tool 
+#Test Environment Booking Tool 
 
 This in an opensource tool written in PHP with code-ignitor(MVC). you are free to clone, do a pull request or download and use it commercially. 
 
 This tool allows you to create environment, add multiple users, Reserve environment and admin user can approve,edit,delete the requests. 
 There is calendar view to see the current reserve. Currently I am not checking the environment booking overlap. 
+
+### Features 
+
+- Environment Booking
+- Environment Scheduling
+- Calendar View
+- User Registeration and Login
 
 ### Demo to play around with:
 ``` 
@@ -32,6 +39,27 @@ Browser : Chrome and IE-9
 ```
 
 ### Installation & Configuration
+
+#### Quick and Easy 
+
+you can quickly stand up environment booking on your server with docker , please please follow the steps for the same 
+
+- Git Clone the repo 
+
+```
+git clone https://github.com/shzshi/TestEnvironmentBooking.git
+```
+
+- Run Docker Compose 
+
+Just run the docker-compose , this should stand up the EBT locally for you. 
+
+```
+docker-compose up --build -d 
+
+```
+
+
 ```
 git clone https://github.com/shzshi/TestEnvironmentBooking.git
 ```

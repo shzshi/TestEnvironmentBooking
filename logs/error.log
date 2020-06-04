@@ -200,3 +200,10 @@ AH00558: apache2: Could not reliably determine the server's fully qualified doma
 AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.31.0.3. Set the 'ServerName' directive globally to suppress this message
 [Thu Jun 04 19:19:55.854933 2020] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.10 (Debian) PHP/5.6.40 configured -- resuming normal operations
 [Thu Jun 04 19:19:55.855580 2020] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Thu Jun 04 19:40:48.356380 2020] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.31.0.3. Set the 'ServerName' directive globally to suppress this message
+[Thu Jun 04 19:40:49.427402 2020] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.10 (Debian) PHP/5.6.40 configured -- resuming normal operations
+[Thu Jun 04 19:40:49.428483 2020] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Thu Jun 04 19:41:00.156355 2020] [autoindex:error] [pid 16] [client 172.31.0.1:56684] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Thu Jun 04 19:41:03.507957 2020] [autoindex:error] [pid 17] [client 172.31.0.1:56688] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Thu Jun 04 19:41:04.573343 2020] [autoindex:error] [pid 17] [client 172.31.0.1:56688] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive

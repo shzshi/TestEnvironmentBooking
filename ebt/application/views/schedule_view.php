@@ -203,7 +203,7 @@
 
 				type: "POST",
 
-				url: "http://localhost:8000/ebt/schedule/addSchedule",
+				url: "http://localhost/ebt/schedule/addSchedule",
 
 				data: dataString,
 
