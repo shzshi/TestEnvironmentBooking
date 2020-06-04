@@ -58,7 +58,7 @@ Just run the docker-compose , this should stand up the EBT locally for you.
 docker-compose up --build -d 
 
 ```
-
+#### Manual Setup
 
 ```
 git clone https://github.com/shzshi/TestEnvironmentBooking.git
@@ -80,15 +80,39 @@ $db['default']['dbdriver'] = 'mysql';
 
 ### Edit .htaccess
 ```
-# If your page resides at
-#  http://www.example.com/mypage/test1
-# then use
-# RewriteBase /mypage/test1/
-  
-RewriteBase /
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  # !IMPORTANT! Set your RewriteBase here and don't forget trailing and leading
+  #  slashes.
+  # If your page resides at
+  #  http://www.example.com/mypage/test1
+  # then use
+  # RewriteBase /mypage/test1/
+  RewriteBase /ebt/
+  # RewriteCond %{REQUEST_FILENAME} !-f
+  #RewriteCond $1 !^(index\.php|images|stylesheets|scripts|robots\.txt)
+  # RewriteCond %{REQUEST_FILENAME} !-d
+  #RewriteRule ^(.*)$ index.php?/$1 [L]
+  RewriteCond $1 !^(index\.php|images|css|js|robots\.txt|favicon\.ico)
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)$ ./index.php/$1 [L]
 
-#set the path for error log
-php_value error_log  /var/www/html/environmentbooking/PHP_errors.log
+  php_flag display_startup_errors on
+  php_flag display_errors on
+  php_flag html_errors on
+  php_flag  log_errors on
+  #php_value error_log  /ebt/PHP_errors.log
+  
+</IfModule>
+
+<IfModule !mod_rewrite.c>
+  # If we don't have mod_rewrite installed, all 404's
+  # can be sent to index.php, and everything works as normal.
+  # Submitted by: ElliotHaughin
+
+  ErrorDocument 404 /index.php
+</IfModule>
 ```
 
 ### Add database & table in mysql 
