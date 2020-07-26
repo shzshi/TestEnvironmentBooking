@@ -10,7 +10,7 @@ There is calendar view to see the current reserve. Currently I am not checking t
 - Environment Booking
 - Environment Scheduling
 - Calendar View
-- User Registeration and Login
+- User Registration and Login
 
 ### Demo to play around with:
 ``` 
